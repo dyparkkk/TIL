@@ -23,5 +23,6 @@
 ## Spring
 
 - [JPA](https://github.com/dyparkkk/TIL/blob/main/spring/JPA.md)
+- [JPA_상속관계](https://github.com/dyparkkk/TIL/blob/main/spring/jpa_%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84.md)
 
 ##
