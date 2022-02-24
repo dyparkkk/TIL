@@ -91,13 +91,9 @@ DB 장애로부터 이전의 상태로 복구시켜서 일관된 상태로 만�
 로그 
 
 참고 자료: 
-
 [트랜잭션](http://wiki.hash.kr/index.php/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
-
 [[Database] 8. 트랜잭션, 동시성 제어, 회복](https://mangkyu.tistory.com/30)
-
 [동시성 제어( Concurrency Control )](https://velog.io/@ha0kim/%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%A0%9C%EC%96%B4)
 
 읽어볼것:
-
 [NAVER D2](https://d2.naver.com/helloworld/407507)
