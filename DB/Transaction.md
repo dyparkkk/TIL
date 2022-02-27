@@ -93,6 +93,7 @@ DB 장애로부터 이전의 상태로 복구시켜서 일관된 상태로 만�
 
 로그 
 
+---
 참고 자료: 
 
 [wiki.hash.kr/index.php/트랜잭션](wiki.hash.kr/index.php/트랜잭션)
@@ -101,6 +102,7 @@ DB 장애로부터 이전의 상태로 복구시켜서 일관된 상태로 만�
 
 [https://velog.io/@ha0kim/동시성-제어](https://velog.io/@ha0kim/동시성-제어)
 
+---
 읽어볼것:
 
 [https://d2.naver.com/helloworld/407507](https://d2.naver.com/helloworld/407507)
