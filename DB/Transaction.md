@@ -1,6 +1,5 @@
 # Transaction
 
-생성일: 2022년 2월 23일 오전 11:46
 
 - 더 이상 쪼갤 수 없는 작업의 최소 단위
 - DB에 데이터 부정합을 방지하기 위해 사용
@@ -31,9 +30,8 @@
 - Inconsistency (모순성, repeatable read 문제)
 - Cascading Rollback (연쇄 복귀) : 캡션
 
-![캡](Transactio%20d4b86/Untitled.png)
+![](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/cascading_Rollback.png)
 
-캡
 
 T1의 Read(Y) 이후에 Fail시 Roll back 해야 하는 경우 발생 가정 시 
 
@@ -47,7 +45,7 @@ T1의 개시 최초 상태인 X=500, y=500인 상태로 복귀해야 하지만 T
     - 트랜잭션 격리 수준에 따라서 데이터 쓰고 바로 락 풀지, 아니면 트랜잭션 끝날때까지 안풀지
 - timestamp
     
-    ![Untitled](Transactio%20d4b86/Untitled%201.png)
+    ![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/transaction_timestamp.png)
     
 - 낙관적 검증
 - MVCC (다중버전 병행제어 기법)
@@ -75,13 +73,11 @@ T1의 개시 최초 상태인 X=500, y=500인 상태로 복귀해야 하지만 T
 
 커밋 된거만 읽기 보장 수준
 
-![Untitled](Transactio%20d4b86/Untitled%202.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/read_committed.png)
 
 ### Repeatable Read
 
 다시 읽기 보장 수준
-
-![Untitled](Transactio%20d4b86/Untitled%203.png)
 
 ### Serializable
 
@@ -99,12 +95,12 @@ DB 장애로부터 이전의 상태로 복구시켜서 일관된 상태로 만�
 
 참고 자료: 
 
-[트랜잭션](http://wiki.hash.kr/index.php/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
+[wiki.hash.kr/index.php/트랜잭션](wiki.hash.kr/index.php/트랜잭션)
 
-[[Database] 8. 트랜잭션, 동시성 제어, 회복](https://mangkyu.tistory.com/30)
+[https://mangkyu.tistory.com/30](https://mangkyu.tistory.com/30)
 
-[동시성 제어( Concurrency Control )](https://velog.io/@ha0kim/%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%A0%9C%EC%96%B4)
+[https://velog.io/@ha0kim/동시성-제어](https://velog.io/@ha0kim/동시성-제어)
 
 읽어볼것:
 
-[NAVER D2](https://d2.naver.com/helloworld/407507)
+[https://d2.naver.com/helloworld/407507](https://d2.naver.com/helloworld/407507)
