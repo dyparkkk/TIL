@@ -22,7 +22,7 @@
 - default 메서드로 강제 구현 강요
 - 다중 상속 가능
 - 다형성 구현을 위해 사용
-
+<br>
 참고자료:
 
 [https://brunch.co.kr/@kd4/6](https://brunch.co.kr/@kd4/6)
