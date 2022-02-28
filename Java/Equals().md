@@ -1,10 +1,9 @@
 # Equals()
 
-생성일: 2022년 2월 28일 오전 10:02
 
 ## String 변수 생성시 주소 할당
 
-![Untitled](Equals()%2031c61/Untitled.png)
+![https://raw.githubusercontent.com/dyparkkk/TIL/main/img/string_heap.png](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/string_heap.png)
 
 - String을 리터럴로 생성 할 경우 intern() 메서드 호출
 - intern() 메서드는 string constant pool에서 문자열 검색 후 반환(없으면 생성 후 반환)
