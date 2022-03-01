@@ -49,9 +49,11 @@ public boolean equals(Object obj) {
 
 Object 클래스에서는 heap에 저장된 객체의 메모리 주소를 반환한다. ( 항상 그런 것은 아님)
 
+- hash table에 사용된다 ex) java.util.HashMap 등
 - equals() 메서드를 재정의 하면 꼭 hashCode() 메서드를 재정의 해야함
-    - 
+    - equals() 로 true를 반환하는 같은 두 객체는 hashcode도 같은 값을 반환해야 함
 
+<br>
 참고자료
 
 [https://coding-factory.tistory.com/536](https://coding-factory.tistory.com/536)
