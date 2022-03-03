@@ -1,6 +1,5 @@
 # Generic
 
-생성일: 2022년 3월 1일 오후 11:46
 
 데이터 타입을 일반화한 것 
 
@@ -25,7 +24,7 @@ class MyArray<T> {
 
 → **wrapper 클래스를 사용해야함!**
 
-![Untitled](Generic%2070909/Untitled.png)
+![generic type](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/generic_type.png)
 
 ## 제한된 제네릭
 
@@ -46,13 +45,10 @@ class MyArray<T> {
 public class ClassName <E extends Comparable<? super E> { ... }
 ```
 
-특히 PriorityQueue(우선순위 큐), TreeSet, TreeMap 같이 값을 정렬하는 클래스 만약 여러분이 특정 제네릭에 대한 자기 참조 비교를 하고싶을 경우 대부분 공통적으로 위와 같은 형식을 취한다.
+- 특히 PriorityQueue(우선순위 큐), TreeSet, TreeMap 같이 값을 정렬하는 클래스 만약 여러분이 특정 제네릭에 대한 자기 참조 비교를 하고싶을 경우 대부분 공통적으로 위와 같은 형식을 취한다.
 
-E 는 Comparable을 implements 받아야 하고,
-
- Comparable은 매개 변수로 E와 E의 상위 클래스만 받아야 한다.
-
-→ Comparable.compareTo(T o) 가 업캐스팅으로 구현되어있을 수도 있어서... 
+- E 는 Comparable을 implements 받아야 하고, Comparable은 매개 변수로 E와 E의 상위 클래스만 받아야 한다.
+    → Comparable.compareTo(T o) 가 업캐스팅으로 구현되어있을 수도 있어서... 
 
 <br>
 
