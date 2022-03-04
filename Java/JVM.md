@@ -1,10 +1,9 @@
 # JVM
 
-생성일: 2022년 3월 3일 오후 9:05
 
 ## Runtime Data Area
 
-![Runtime Data Area](JVM%205c359/Untitled.png)
+![Runtime Data Area](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/Runtime_Data%20Area.png)
 
 Runtime Data Area
 
@@ -33,7 +32,7 @@ Runtime Data Area
 
 ### Heap 영역
 
-![heap 영역](JVM%205c359/Untitled%201.png)
+![heap 영역](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/heap_area.png)
 
 heap 영역
 
