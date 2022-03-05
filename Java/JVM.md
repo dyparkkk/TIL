@@ -1,5 +1,34 @@
 # JVM
 
+## “write once run anywhere”
+
+→ OS에 종속되지 않고, 어떤 기계든 jvm만 설치하면 동일한 자바 바이트 코드를 돌릴 수 있다. 
+
+![jvm 구조](https://raw.githubusercontent.com/dyparkkk/TIL/6809b01902850148042beab73a09cf317eb0e407/img/jvm%EA%B5%AC%EC%A1%B0.png)
+
+jvm 구조
+
+## Class Loader
+
+jvm내로 클래스파일(.class)를 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈
+
+- **Runtime시에 동적으로 클래스를 로드함.**
+- 즉, 클래스를 처음으로 참조할 때, 해당 클래스를 로드하고 링크함
+- runtime data area에 바이트 코드 배치
+
+## Execution Engine
+
+class loader가 배치한 바이트 코드 실행 → 실제 기계가 실행 할 수 있는 형태로 변환
+
+### Interpreter
+
+### JIT (just-in-time)
+
+인터프리터 방식의 컴파일러를 보완하기 위해 도입된 JIT 컴파일러.
+
+- 많이 실행되는 메서드는 인터프리팅 방식으로 컴파일시 비효율적 →  한번에 네이티브 코드로  직접실행
+- 네이티브 코드는 캐시에 저장 → 여러 번 수행시 빠르게 수행됨
+
 
 ## Runtime Data Area
 
@@ -51,3 +80,9 @@ heap 영역
 [https://www.youtube.com/watch?v=UzaGOXKVhwU](https://www.youtube.com/watch?v=UzaGOXKVhwU)
 
 [https://www.youtube.com/watch?v=vZRmCbl871I](https://www.youtube.com/watch?v=vZRmCbl871I)
+
+[https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)  - garbage collection
+
+[https://asfirstalways.tistory.com/158](https://asfirstalways.tistory.com/158) - jvm 자세한 정리
+
+[https://yeon-kr.tistory.com/114](https://yeon-kr.tistory.com/114) - java memory model
