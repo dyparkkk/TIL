@@ -12,6 +12,11 @@
 - [equals()](https://github.com/dyparkkk/TIL/blob/main/Java/Equals().md)
 - [추상클래스vs인터페이스](https://github.com/dyparkkk/TIL/blob/main/Java/추상클래스vs인터페이스.md)
 - [final](https://github.com/dyparkkk/TIL/blob/main/Java/final.md)
+- [JVM](https://github.com/dyparkkk/TIL/blob/main/Java/JVM.md)
+
+## OOP
+
+- 
 
 ## Network
 
