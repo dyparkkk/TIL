@@ -1,6 +1,5 @@
 # Exception
 
-생성일: 2022년 3월 8일 오후 5:40
 
 ## Servelt Container
 
@@ -139,7 +138,7 @@ application/json인 경우 error() 호출로 잘 나누어져 있음
 
 ## HandlerExceptionResolver
 
-![exceptionResolver.PNG](Exception%20beed6/exceptionResolver.png)
+![exceptionResolver.PNG](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/exceptionResolver.png)
 
 **exceptionResolver를 사용함으로 예외처리의 흐름을 바꿈**
 
@@ -211,6 +210,7 @@ IllegalArgumentException  와 그 자식 클래스를 처리하는 handler
 
 다양한 예외를 한꺼번에 처리할 수 있음 
 
+<br>
 참고 자료 : 
 
-인프런 - spring boot MVC 2( 김영한님 강의 )
+https://www.inflearn.com/course/스프링-mvc-2/dashboard - 인프런, spring boot MVC 2( 김영한님 강의 )
