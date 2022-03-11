@@ -12,9 +12,9 @@
 - [JVM](https://github.com/dyparkkk/TIL/blob/main/Java/JVM.md)
 
 ## OOP
-- [OOP_4가지_특징](https://github.com/dyparkkk/TIL/blob/main/Java/OOP_4%EA%B0%80%EC%A7%80_%ED%8A%B9%EC%A7%95.md)
-- [SOLID원칙](https://github.com/dyparkkk/TIL/blob/main/Java/SOLID%EC%9B%90%EC%B9%99.md)
-- [DI](https://github.com/dyparkkk/TIL/blob/main/Java/DI.md)
+- [OOP_4가지_특징](https://github.com/dyparkkk/TIL/blob/main/OOP/OOP_4%EA%B0%80%EC%A7%80_%ED%8A%B9%EC%A7%95.md)
+- [SOLID원칙](https://github.com/dyparkkk/TIL/blob/main/OOP/SOLID%EC%9B%90%EC%B9%99.md)
+- [DI](https://github.com/dyparkkk/TIL/blob/main/OOP/DI.md)
 
 ## Network
 
