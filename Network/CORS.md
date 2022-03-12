@@ -1,7 +1,5 @@
 # CORS
 
-생성일: 2022년 2월 26일 오후 5:26
-
 > **교차 출처 리소스 공유**
 (Cross-Origin Resource Sharing, [CORS](https://developer.mozilla.org/ko/docs/Glossary/CORS))는 추가 [HTTP](https://developer.mozilla.org/ko/docs/Glossary/HTTP)  헤더를 사용하여, 한 [출처](https://developer.mozilla.org/ko/docs/Glossary/Origin)에서 실행 중인 웹 애플리케이션이 다른 출처의 선택한 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제 - mdn
 > 
@@ -46,7 +44,7 @@ protocol은 `https://`  Host는 `www.google.com` Port는 `:443`로 구성되
 
 1. Preflight Request
 
-![Preflight Request](CORS%20cb25c/Untitled.png)
+![Preflight Request](https://raw.githubusercontent.com/dyparkkk/TIL/main/Network/img/cors1.png)
 
 Preflight Request
 
@@ -59,7 +57,7 @@ Preflight Request
 
 ### Simple Request
 
-![Simple Request](CORS%20cb25c/Untitled%201.png)
+![Simple Request](https://raw.githubusercontent.com/dyparkkk/TIL/main/Network/img/cors2.png)
 
 Simple Request
 
