@@ -1,6 +1,5 @@
 # Knapsack
 
-생성일: 2022년 3월 13일 오후 5:47
 
 ## DP의 가정
 
@@ -11,7 +10,7 @@
 
 ## 점화식
 
-![Untitled](Knapsack%200b2d2/Untitled.png)
+![knapsack](https://raw.githubusercontent.com/dyparkkk/TIL/main/algorithm/img/knapsack.png)
 
 ## DP[i][j]정의
 
