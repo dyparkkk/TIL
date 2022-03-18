@@ -32,7 +32,7 @@ class loader가 배치한 바이트 코드 실행 → 실제 기계가 실행 �
 
 ## Runtime Data Area
 
-![Runtime Data Area](https://raw.githubusercontent.com/dyparkkk/TIL/main/img/Runtime_Data%20Area.png)
+![Runtime Data Area](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/runtime_data_area.png)
 
 Runtime Data Area
 
@@ -89,7 +89,7 @@ GC의 전제 조건 ( 가정 )
 
 가정에서 가장 효율적인 메모리를 사용하기 위해 Heap 영역은 두 부분으로 나눈다. young과 old
 
-![Untitled](JVM%20c7029/Untitled%202.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/young.png)
 
 ## Young 영역
 
@@ -119,7 +119,7 @@ GC의 전제 조건 ( 가정 )
 
 ### CMS GC
 
-![Untitled](JVM%20c7029/Untitled%204.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/CMS_GC.png)
 
 과정
 
@@ -135,7 +135,7 @@ GC의 전제 조건 ( 가정 )
 
 ### G1 GC
 
-![Untitled](JVM%20c7029/Untitled%205.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/G1_GC.png)
 
 - young, old 영역이 없음
 - 각 영역에 객체를 넣고 꽉 차면 다른 영역으로 옮김
