@@ -32,7 +32,7 @@ class loader가 배치한 바이트 코드 실행 → 실제 기계가 실행 �
 
 ## Runtime Data Area
 
-![Runtime Data Area](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/runtime_data_area.png)
+![Runtime Data Area](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/thread_memory.png)
 
 Runtime Data Area
 
