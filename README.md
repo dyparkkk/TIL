@@ -27,6 +27,7 @@
 - [LIS](https://github.com/dyparkkk/TIL/blob/main/algorithm/LIS.md)
 - [Topology Sort](https://github.com/dyparkkk/TIL/blob/main/algorithm/Topology_Sort.md)
 - [Knapsack](https://github.com/dyparkkk/TIL/blob/main/algorithm/Knapsack.md)
+- [LCS](https://github.com/dyparkkk/TIL/blob/main/algorithm/LCS.md)
 
 ## Spring
 
