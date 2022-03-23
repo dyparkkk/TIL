@@ -41,4 +41,7 @@
 - [Transaction](https://github.com/dyparkkk/TIL/blob/main/DB/Transaction.md)
 - 
 
-## 
+## Book
+
+- [Effective Java](https://github.com/dyparkkk/TIL/blob/main/book/effective_java.md)
+
