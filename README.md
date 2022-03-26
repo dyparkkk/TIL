@@ -29,6 +29,7 @@
 - [Knapsack](https://github.com/dyparkkk/TIL/blob/main/algorithm/Knapsack.md)
 - [LCS](https://github.com/dyparkkk/TIL/blob/main/algorithm/LCS.md)
 - [Two Pointer](https://github.com/dyparkkk/TIL/blob/main/algorithm/Two_Pointer.md)
+- [Dijkstra](https://github.com/dyparkkk/TIL/blob/main/algorithm/Dijkstra.md)
 
 ## Spring
 
@@ -40,7 +41,7 @@
 ## DB
 
 - [Transaction](https://github.com/dyparkkk/TIL/blob/main/DB/Transaction.md)
-- 
+- [Normalization](https://github.com/dyparkkk/TIL/blob/main/DB/DB_Normalization.md)
 
 ## Book
 
