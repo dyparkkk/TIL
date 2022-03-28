@@ -1,9 +1,11 @@
 # 이펙티브 자바
 
 
-목차
-- [아이템 20 : 추상 클래스보다는 인터페이스를 우선하라](#아이템-20-:-추상-클래스보다는-인터페이스를-우선하라)
-- [아이템 24 : 멤버 클래스는 되도록 static으로 만들라](#아이템-24-:-멤버-클래스는-되도록-static으로-만들라)
+목차  
+[아이템 20 : 추상 클래스보다는 인터페이스를 우선하라](#아이템-20-:-추상-클래스보다는-인터페이스를-우선하라)
+[아이템 24 : 멤버 클래스는 되도록 static으로 만들라](#아이템-24-:-멤버-클래스는-되도록-static으로-만들라)
+[아이템 28 : 배열보다는 리스트를 사용하라](#아이템-28-:-배열보다는-리스트를-사용하라)
+
 
 ## 아이템 20 : 추상 클래스보다는 인터페이스를 우선하라
 
@@ -103,3 +105,70 @@ final class KeySet extends AbstractSet<K> {
 ...
 }
 ```
+
+## 아이템 28 : 배열보다는 리스트를 사용하라
+
+### 배열은 공변이다
+
+- Sub가 Super의 하위타입일 때 배열 Sub[]는 배열 Super[]의 하위 타입이 됨
+- 제네릭은 불공변
+
+배열은 런타임에 실패한다. 
+
+```java
+Object[] objectArray = new Long[1];
+objectArray[0] = "타입이 다르다" // ArrayStoreException을 던짐
+```
+
+제네릭은 컴파일 되지 않음
+
+```java
+List<Object> ol = new ArrayList<Long>(); // 호환되지 않음 -> 컴파일 x
+```
+
+### 배열은 실체화(reify)된다.
+
+- 런타임에도 자신이 담기로 한 원소의 타입을 인지하고 확인한다.
+- 제네릭은 타입 정보가 런타임에 소거됨
+
+⇒ 배열은 제네릭 타입, 타입 매개변수로 사용 할 수 없음 ( 컴파일에서 막음)
+
+```java
+// 컬렉션 안의 무작위 원소를 골라주는 메서드를 제공하는 클래스
+public class Choose<T> {
+    private final T[] choiceArray;
+
+    public Choose(Collection<T> choices) {
+        choiceArray = choices.toArray();
+    }
+		...
+}
+// 컴파일러 에러 
+// Incompatible types. Found: 'java.lang.Object[]', required: 'T[]'
+```
+
+배열 → 리스트로 리펙토링
+
+```java
+// 컬렉션 안의 무작위 원소를 골라주는 메서드를 제공하는 클래스
+public class Choose<T> {
+    private final List<T> choiceList;
+
+    public Choose(Collection<T> choices) {
+        choiceList = new ArrayList<>(choices);
+    }
+    
+    public T ChooseOne(){
+        Random rnd = ThreadLocalRandom.current();
+        return choiceList.get(rnd.nextInt(choiceList.size()));
+    }
+}
+```
+
+## 아이템 31 : 한정적 와일드카드를 사용해 API 유연성을 높이라
+
+> List<String>은 List<Object>의 하위 타입이 아님.
+List<Object>의 Object를 넣는 일을 List<String>는 못함 → 리스코프 치환 원칙 위배
+> 
+
+-
