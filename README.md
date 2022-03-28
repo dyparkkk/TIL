@@ -45,5 +45,5 @@
 
 ## Book
 
-- [Effective Java](https://github.com/dyparkkk/TIL/blob/main/book/effective_java.md)
+- [Effective Java](https://github.com/dyparkkk/TIL/blob/main/book/effective_Java.md)
 
