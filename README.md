@@ -6,10 +6,11 @@
 ## Java
 
 - [디자인패턴](https://github.com/dyparkkk/TIL/blob/main/Java/디자인패턴.md)
-- [equals()](https://github.com/dyparkkk/TIL/blob/main/Java/Equals().md)
+- [Equals&Hashcode](https://github.com/dyparkkk/TIL/blob/main/Java/Equals&Hashcode.md)
 - [추상클래스vs인터페이스](https://github.com/dyparkkk/TIL/blob/main/Java/추상클래스vs인터페이스.md)
 - [final](https://github.com/dyparkkk/TIL/blob/main/Java/final.md)
 - [JVM](https://github.com/dyparkkk/TIL/blob/main/Java/JVM.md)
+- [HashMap(Java11)](https://github.com/dyparkkk/TIL/blob/main/Java/HashMap(Java11).md)
 
 ## OOP
 - [OOP_4가지_특징](https://github.com/dyparkkk/TIL/blob/main/OOP/OOP_4%EA%B0%80%EC%A7%80_%ED%8A%B9%EC%A7%95.md)
@@ -46,4 +47,3 @@
 ## Book
 
 - [Effective Java](https://github.com/dyparkkk/TIL/blob/main/book/effective_Java.md)
-
