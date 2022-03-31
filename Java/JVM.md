@@ -144,18 +144,11 @@ GC의 전제 조건 ( 가정 )
 
 ---
 
-참고자료 :
-
-[https://doozi0316.tistory.com/entry/1주차-JVM은-무엇이며-자바-코드는-어떻게-실행하는-것인가](https://doozi0316.tistory.com/entry/1%EC%A3%BC%EC%B0%A8-JVM%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B8%EA%B0%80)
-
-[https://www.youtube.com/watch?v=UzaGOXKVhwU](https://www.youtube.com/watch?v=UzaGOXKVhwU)
-
-[https://www.youtube.com/watch?v=vZRmCbl871I](https://www.youtube.com/watch?v=vZRmCbl871I)
-
-[https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)  - garbage collection
-
-[https://asfirstalways.tistory.com/158](https://asfirstalways.tistory.com/158) - jvm 자세한 정리
-
-[https://yeon-kr.tistory.com/114](https://yeon-kr.tistory.com/114) - java memory model
-
-[https://asfirstalways.tistory.com/159](https://asfirstalways.tistory.com/159) - GC가 삭제하는 객체 선정
+참고자료 :  
+[https://doozi0316.tistory.com/entry/1주차-JVM은-무엇이며-자바-코드는-어떻게-실행하는-것인가](https://doozi0316.tistory.com/entry/1%EC%A3%BC%EC%B0%A8-JVM%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B8%EA%B0%80)  
+[https://www.youtube.com/watch?v=UzaGOXKVhwU](https://www.youtube.com/watch?v=UzaGOXKVhwU)  
+[https://www.youtube.com/watch?v=vZRmCbl871I](https://www.youtube.com/watch?v=vZRmCbl871I)  
+[https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)  - garbage collection  
+[https://asfirstalways.tistory.com/158](https://asfirstalways.tistory.com/158) - jvm 자세한 정리  
+[https://yeon-kr.tistory.com/114](https://yeon-kr.tistory.com/114) - java memory model  
+[https://asfirstalways.tistory.com/159](https://asfirstalways.tistory.com/159) - GC가 삭제하는 객체 선정  

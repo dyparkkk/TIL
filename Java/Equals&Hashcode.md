@@ -76,7 +76,5 @@ public static int hashCode(byte[] value) {
 참고자료:  
 
 [https://coding-factory.tistory.com/536](https://coding-factory.tistory.com/536)  
-
 [https://mangkyu.tistory.com/101](https://mangkyu.tistory.com/101)  |  hashcode와 equals  
-
 [https://d2.naver.com/helloworld/831311](https://d2.naver.com/helloworld/831311)

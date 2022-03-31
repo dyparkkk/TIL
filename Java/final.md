@@ -46,11 +46,9 @@ final을 선언해서 read-only로 만들수 있음
 - 개발자의 의도를 명시
 - 가독성 확보
 
-<br>
-참고자료 :
-
-[https://makemethink.tistory.com/184](https://makemethink.tistory.com/184)
-
-[https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2](https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2)
-
-[https://stackoverflow.com/questions/2068804/why-is-the-string-class-declared-final-in-java](https://stackoverflow.com/questions/2068804/why-is-the-string-class-declared-final-in-java)
+---
+  
+참고자료 :  
+[https://makemethink.tistory.com/184](https://makemethink.tistory.com/184)  
+[https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2](https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2)  
+[https://stackoverflow.com/questions/2068804/why-is-the-string-class-declared-final-in-java](https://stackoverflow.com/questions/2068804/why-is-the-string-class-declared-final-in-java)  
