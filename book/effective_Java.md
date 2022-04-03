@@ -9,7 +9,7 @@
 - [아이템24 멤버 클래스는 되도록 static으로 만들라](#아이템24-멤버-클래스는-되도록-static으로-만들라)
 - [아이템28 배열보다는 리스트를 사용하라](#아이템28-배열보다는-리스트를-사용하라)
 - [아이템31 한정적 와일드카드를 사용해 API 유연성을 높이라](#아이템31-한정적-와일드카드를-사용해-API-유연성을-높이라)
-- 
+- [아이템34 int 상수 대신 열거 타입을 사용하라](#아이템34-int-상수-대신-열거-타입을-사용하라)
 
 
 ## 아이템2 생성자에 매개변수가 많다면 빌더를 고려하라
@@ -407,6 +407,142 @@ public class RecursiveTypeBound {
     public static void main(String[] args) {
         List<String> argList = Arrays.asList(args);
         System.out.println(max(argList));
+    }
+}
+```
+
+## 아이템34 int 상수 대신 열거 타입을 사용하라
+
+- 열거타입이란 ? 일정 개수의 상수 값을 정의한 다음, 그 외 값은 허용하지 않는 타입
+- **필요한 원소를 컴파일타임에 다 알 수 있는 상수 집합이라면 항상 열거 타입 사용 !**
+
+정수 열거 패턴은 취약하다 
+
+- 타입 안정성 보장 X ( int 값 == 등으로 동일해 질 수 있음 )
+- 표현력 좋지 못함 ( toString 등으로 출력하기 까다로움)
+
+### enum 예시
+
+```java
+public enum Planet {
+    MERCURY(3.302e+23, 2.439e6),
+    VENUS  (4.869e+24, 6.052e6),
+    EARTH  (5.975e+24, 6.378e6),
+    MARS   (6.419e+23, 3.393e6),
+    JUPITER(1.899e+27, 7.149e7),
+    SATURN (5.685e+26, 6.027e7),
+    URANUS (8.683e+25, 2.556e7),
+    NEPTUNE(1.024e+26, 2.477e7);
+
+    private final double mass;           // In kilograms
+    private final double radius;         // In meters
+    private final double surfaceGravity; // In m / s^2
+
+    // Universal gravitational constant in m^3 / kg s^2
+    private static final double G = 6.67300E-11;
+
+    //열거 타입 상수를 특정 데이터와 연결하기 ( 인스턴스 필드 + 생성자 사용)
+    Planet(double mass, double radius) {
+        this.mass = mass;
+        this.radius = radius;
+        surfaceGravity = G * mass / (radius * radius); // 최적화를 위해 미리 계산 후 필드로 만듬
+    }
+
+    public double mass()           { return mass; }
+    public double radius()         { return radius; }
+    public double surfaceGravity() { return surfaceGravity; }
+
+    public double surfaceWeight(double mass) {
+        return mass * surfaceGravity;  // F = ma
+    }
+}
+```
+
+```java
+// 실행 예시
+public static void main(String[] args) {
+      double earthWeight = 185.00;
+      double mass = earthWeight / Planet.EARTH.surfaceGravity();
+      for (Planet p : Planet.values()) // Enum.values() 기본 내장 메서드
+         System.out.printf("Weight on %s is %f%n",
+                 p, p.surfaceWeight(mass));
+   }
+```
+
+### 상수마다 다른 동작을 하는 열거 타입
+
+```java
+// 상수마다 동작이 달라지는 enum
+public enum Operation {
+    PLUS("+") {
+        public double apply(double x, double y) { return x + y; }
+    },
+    MINUS("-") {
+        public double apply(double x, double y) { return x - y; }
+    },
+    TIMES("*") {
+        public double apply(double x, double y) { return x * y; }
+    },
+    DIVIDE("/") {
+        public double apply(double x, double y) { return x / y; }
+    };
+
+    private final String symbol;
+
+    Operation(String symbol) { this.symbol = symbol; }
+
+    // 해당하는 기호 반환을 위해 
+    @Override public String toString() { return symbol; }
+
+    // 재정의 메서드 
+    public abstract double apply(double x, double y);
+    
+    // 이런 식으로 사용도 가능 
+    private static final Map<String, Operation> stringToEnum =
+            Stream.of(values()).collect(
+                    toMap(Object::toString, e -> e));
+}
+```
+
+### 상수 일부가 같은 동작을 하는 코드 (전략 열거 타입 패턴)
+
+```java
+// 평일은 평일 수당, 주말은 주말 수당으로 작동 
+// 상수에게 전략 열거 타입을 선택하게 함 !! 
+enum PayrollDay {
+    MONDAY(WEEKDAY), TUESDAY(WEEKDAY), WEDNESDAY(WEEKDAY),
+    THURSDAY(WEEKDAY), FRIDAY(WEEKDAY),
+    SATURDAY(WEEKEND), SUNDAY(WEEKEND);
+
+    private final PayType payType;
+
+    PayrollDay(PayType payType) { this.payType = payType; }
+
+    int pay(int minutesWorked, int payRate) {
+        return payType.pay(minutesWorked, payRate);
+    }
+
+    // 전략 열거 타입 패턴 
+    enum PayType {
+        WEEKDAY {
+            int overtimePay(int minsWorked, int payRate) {
+                return minsWorked <= MINS_PER_SHIFT ? 0 :
+                        (minsWorked - MINS_PER_SHIFT) * payRate / 2;
+            }
+        },
+        WEEKEND {
+            int overtimePay(int minsWorked, int payRate) {
+                return minsWorked * payRate / 2;
+            }
+        };
+
+        abstract int overtimePay(int mins, int payRate);
+        private static final int MINS_PER_SHIFT = 8 * 60;
+
+        int pay(int minsWorked, int payRate) {
+            int basePay = minsWorked * payRate;
+            return basePay + overtimePay(minsWorked, payRate);
+        }
     }
 }
 ```
