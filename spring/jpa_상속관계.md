@@ -2,17 +2,19 @@
 
 ## 1. 조인전략
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7df7a23-b72a-42e1-b13c-7e7e2a7b2662/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPAmapping00.png)
 
 - 정규화 가능
 
 ## 2. 단일 테이블
 
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPAmapping01.png)
+
 - 단순함
 
 ## 3. 구현클래스마다 테이블
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/16caea2c-ccc6-4c76-a344-bbed440e9ec0/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPAmapping02.png)
 
 - 조회할때 힘듬 → 잘 안씀
 
