@@ -26,12 +26,11 @@ public class Member {
 
 ## 영속성 컨텍스트
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e21190a8-2402-4a6c-bde3-4345d6b13d2f/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA00.png)
 
 비영속 상태
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6729baa3-6fd3-47da-8201-3a244f69d5d4/Untitled.png)
-
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA01.png)
 ```java
 Member member = new Member("박도영", 27);
 ```
@@ -72,11 +71,11 @@ em.persist(member);
 
 @Column(nullable = false, length = 10) → DDL 자동 생성에만 영향을 주고 실제 JPA에는 영향 x
 
-[[JPA] Entity Mapping Annotation 정리](https://velog.io/@cham/JPA-Entity-Mapping-Annotation-%EC%A0%95%EB%A6%AC)
+[[JPA] Entity Mapping Annotation 정리]!(https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA02.png)
 
 ## 연관관계
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be515225-e3bd-44ea-80cb-a9ac520fd2d9/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA02.png)
 
 ```java
 @Entity
@@ -121,7 +120,7 @@ em.persist(member);
 
 ### 양방향 연관관계 ( DB 테이블은 동일)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/becbe460-631b-4171-b1ff-aab5bd44a234/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA03.png)
 
 - 단방향 두개 만든거랑 같음
 - member가 연관관계의 주인
@@ -142,11 +141,11 @@ public class Team {
 
 일대다 단방향 관계 매핑( 웬만하면 사용하지 말자)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e31c13e-69a9-4ae9-98b6-931bfe0b4ff9/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA04.png)
 
 ### 일대일 연관관계
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1265d12e-d721-4339-82b2-9fe8bcd0c63f/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA05.png)
 
 주 테이블에 외래 키 vs 대상 테이블에 외래 키
 
@@ -155,9 +154,12 @@ public class Team {
 
 ### 다대다 연관관계
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/996c9742-b7db-4afb-bc2b-cadeb837aff1/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/79e0abd7-1185-4081-b94f-175582ff5371/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA06.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA07.png)
 
 연결용 테이블 추가해서 사용
 @ManyToMany -> @OneToMany, @ManyToOne
+
+---
+참고자료 :  
+자바 ORM 표준 JPA 프로그래밍 - 김영한님  

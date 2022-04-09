@@ -4,7 +4,7 @@
 
 - 컨트롤러의 중요한 역할 중 하나는 HTTP 요청이 정상인지 검증하는 것
 
-![Untitled](Validation%2060beb/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/validation.png)
 
 ## BindingResult
 
