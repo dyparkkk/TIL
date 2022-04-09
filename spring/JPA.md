@@ -26,11 +26,11 @@ public class Member {
 
 ## 영속성 컨텍스트
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA00.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA00.png)
 
 비영속 상태
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA01.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA01.png)
 ```java
 Member member = new Member("박도영", 27);
 ```
@@ -71,11 +71,11 @@ em.persist(member);
 
 @Column(nullable = false, length = 10) → DDL 자동 생성에만 영향을 주고 실제 JPA에는 영향 x
 
-[[JPA] Entity Mapping Annotation 정리]!(https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA02.png)
+[[JPA] Entity Mapping Annotation 정리]!(https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA02.png)
 
 ## 연관관계
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA02.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA02.png)
 
 ```java
 @Entity
@@ -120,7 +120,7 @@ em.persist(member);
 
 ### 양방향 연관관계 ( DB 테이블은 동일)
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA03.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA03.png)
 
 - 단방향 두개 만든거랑 같음
 - member가 연관관계의 주인
@@ -141,11 +141,11 @@ public class Team {
 
 일대다 단방향 관계 매핑( 웬만하면 사용하지 말자)
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA04.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA04.png)
 
 ### 일대일 연관관계
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA05.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA05.png)
 
 주 테이블에 외래 키 vs 대상 테이블에 외래 키
 
@@ -154,8 +154,8 @@ public class Team {
 
 ### 다대다 연관관계
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA06.png)
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPA07.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA06.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPA07.png)
 
 연결용 테이블 추가해서 사용
 @ManyToMany -> @OneToMany, @ManyToOne

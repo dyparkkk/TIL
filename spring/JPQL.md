@@ -128,7 +128,7 @@ SELECT T.*, M.*
 - 대부분의 N + 1 문제 해결
 - 일대다 관계는 엔티티 중복을 조심 !!
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/JPQL00.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/JPQL00.png)
 
 Distinct
 
