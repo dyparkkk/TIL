@@ -62,6 +62,45 @@ int main(){
 }
 ```
 
+응용  
+start → | ← end 로 양끝에서 모이는 투포인터  
+백준 : 두 용액  
+```java
+// https://www.acmicpc.net/problem/2470
+#include <bits/stdc++.h>
+using namespace std;
+
+int n;
+int gap = 2e9 + 1;
+int main(){
+  cin >> n;
+  vector<int> v(n);
+  for(int i=0; i<n; i++){
+    cin >> v[i];
+  }
+    
+  sort(v.begin(), v.end());
+  // -6, -5, -2, 1, 2, 3
+
+  int st = 0, en = v.size()-1;
+  // cout << gap << '\n';
+  vector<int> ans(2, 0);
+  while(st < en){
+    int tmp = v[st] + v[en];
+    if(gap > abs(tmp)){
+      ans[0] = v[st];
+      ans[1] = v[en];
+      gap = abs(tmp);
+    }
+
+    if(tmp < 0) st++;
+    else en--;
+  }
+  cout << ans[0] << " " << ans[1] << '\n';
+  return 0;
+}
+```
+
 ---
 
 참고자료 : 
