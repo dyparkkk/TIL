@@ -39,11 +39,16 @@
 
 ## Spring
 
-- [JPA](https://github.com/dyparkkk/TIL/blob/main/spring/JPA.md)
-- [JPA_상속관계](https://github.com/dyparkkk/TIL/blob/main/spring/jpa_%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84.md)
 - [Exception](https://github.com/dyparkkk/TIL/blob/main/spring/Exception.md)
 - [Validation](https://github.com/dyparkkk/TIL/blob/main/spring/Validation.md)
+
+## JPA
+
+- [JPA](https://github.com/dyparkkk/TIL/blob/main/spring/JPA.md)
+- [JPA_상속관계](https://github.com/dyparkkk/TIL/blob/main/spring/jpa_%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84.md)
 - [JPQL](https://github.com/dyparkkk/TIL/blob/main/spring/JPQL.md)
+- [Data JPA 기본](https://github.com/dyparkkk/TIL/blob/main/spring/Data_JPA01.md)
+- [Data JPA 응용](https://github.com/dyparkkk/TIL/blob/main/spring/Data_JPA02.md)
 
 ## DB
 
