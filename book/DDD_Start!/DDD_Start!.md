@@ -9,7 +9,7 @@
 
 
 후기 : 사용 안되는 기술도 많이 섞여있다고 생각함  
-책을 도서관에서 구해서 제본해서 공부를 시작하자마자 개정판이 나왔다...  
+책을 도서관에서 빌려 제본했다. 어렵게 공부를 시작하자마자 개정판이 나왔다...  
 http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162245385&orderClick=LEa&Kc= 
 
 
