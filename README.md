@@ -43,6 +43,7 @@
 
 - [Exception](https://github.com/dyparkkk/TIL/blob/main/spring/Exception.md)
 - [Validation](https://github.com/dyparkkk/TIL/blob/main/spring/Validation.md)
+- [ComponentScan](https://github.com/dyparkkk/TIL/blob/main/spring/ComponentScan.md)
 
 ## JPA
 
