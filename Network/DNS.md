@@ -28,12 +28,7 @@ url에 domain name을 입력했을때 가장 먼저 찾는 dns 서버
 
 ![](https://raw.githubusercontent.com/dyparkkk/TIL/main/Network/img/DNS01.png)
 
-있으면 리턴, 없으면 최상위 도메인 DNS 서버 주소 리턴.
-
-ex) com, kr 
-
-이후 반복 
-
-Recursive Query라고 함
-
-이렇게 찾은 ip주소는 DNS cache에 저장
+- 있으면 리턴, 없으면 최상위 도메인 DNS 서버 주소 리턴.
+    - ex) com, kr 
+- 이후 반복 (Recursive Query라고 함)
+- 이렇게 찾은 ip주소는 DNS cache에 저장
