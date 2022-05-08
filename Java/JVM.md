@@ -111,7 +111,7 @@ GC의 전제 조건 ( 가정 )
 
 - serial gc와 기본적인 알고리즘은 같지만 처리하는 스레드가 여러개라서 빠름
 
-![Untitled](JVM%20c7029/Untitled%203.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Java/img/parallel_GC.png)
 
 ### Parallel old GC
 
