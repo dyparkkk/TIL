@@ -4,7 +4,7 @@
 
 - 컨트롤러의 중요한 역할 중 하나는 HTTP 요청이 정상인지 검증하는 것
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Spring/img/validation.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/validation.png)
 
 ## BindingResult
 
