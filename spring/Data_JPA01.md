@@ -1,11 +1,11 @@
 # Data JPA
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Spring/img/dataJpa00.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/dataJpa00.png)
 
 - JPA를 편하게 사용할 수 있도록 지원해주는 프레임워크
 - Spring Data JPA가 인터페이스의 구현 클래스를 생성해서 넣어준다.
 
-![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/Spring/img/dataJpa01.png)
+![Untitled](https://raw.githubusercontent.com/dyparkkk/TIL/main/spring/img/dataJpa01.png)
 
 ## 쿼리 메서드 기능
 
