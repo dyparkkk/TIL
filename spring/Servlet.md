@@ -155,4 +155,4 @@ public class ResponseJsonServlet extends HttpServlet {
 
 ---  
 참고자료 :   
-https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1  
+https://www.inflearn.com/course/스프링-mvc-1   
