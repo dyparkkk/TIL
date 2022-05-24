@@ -48,6 +48,8 @@
 - [Validation](https://github.com/dyparkkk/TIL/blob/main/spring/Validation.md)
 - [ComponentScan](https://github.com/dyparkkk/TIL/blob/main/spring/ComponentScan.md)
 - [Servlet](https://github.com/dyparkkk/TIL/blob/main/spring/Servlet.md)
+- [MVC 패턴](https://github.com/dyparkkk/TIL/blob/main/spring/MVC.md)
+- [Spring MVC](https://github.com/dyparkkk/TIL/blob/main/spring/SpringMVC.md)
 
 ## JPA
 
