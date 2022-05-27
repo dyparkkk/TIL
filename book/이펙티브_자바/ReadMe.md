@@ -1,5 +1,8 @@
 # 이펙티브 자바 정리
 
+> 공부하게 된 이유 :  
+언어란 도구에 불과하다고 말한다. 하지만 내가 생각하는 전문가는 도구를 잘 다루는 능력을 포함한다.
+>
 - [2장 객체 생성과 파괴](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch02.md)
 - [3장 모든 객체의 공통 메서드](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch03.md)
 
