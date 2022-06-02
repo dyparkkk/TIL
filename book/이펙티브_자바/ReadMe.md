@@ -9,4 +9,4 @@
 
 
 ---  
-[전에 정리 한거](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/effective_Java.md)
+[전에 정리 한거](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/effective_Java.md) 
