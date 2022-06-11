@@ -6,6 +6,7 @@
 - [2장 객체 생성과 파괴](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch02.md)
 - [3장 모든 객체의 공통 메서드](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch03.md)
 - [4장 클래스와 인터페이스](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch04.md)
+- [5장 제네릭](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch05.md)
 
 
 ---  
