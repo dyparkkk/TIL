@@ -210,7 +210,18 @@ String listToString =
 // potatoesorangelemonbreadsugar
 ```
 
----
-참고자료:  
+### 참고 : stream의 **groupingBy() 메서드**
+
+- groupingBy는 영어 그대로에서도 알 수 있듯이, 특정 속성(property)값에 의해서 그룹핑을 짓는 것이다.
+- 결과값으로 항상 Map<K, V> 형태를 리턴하게 된다. ( SQL문에서도 사용하는 `group by`와 유사)
+- groupingBy 메서드는 최대 3가지 파라미터를 받는 메서드들로 구성
+
+1. **classifier (Function<? super T,? extends K> ): 분류 기준을 나타낸다.**
+2. **mapFactory (Supplier) : 결과 Map 구성 방식을 변경할 수 있다.**
+3. **downStream (Collector<? super T,A,D>): 집계 방식을 변경할 수 있다.**
+
+---  
+참고자료:   
 [https://sehun-kim.github.io/sehun/java-lambda-stream/](https://sehun-kim.github.io/sehun/java-lambda-stream/)  
-[https://futurecreator.github.io/2018/08/26/java-8-streams/](https://futurecreator.github.io/2018/08/26/java-8-streams/)  
+[https://futurecreator.github.io/2018/08/26/java-8-streams/](https://futurecreator.github.io/2018/08/26/java-8-streams/)   
+[https://umanking.github.io/2021/07/31/java-stream-grouping-by-example/](https://umanking.github.io/2021/07/31/java-stream-grouping-by-example/)
