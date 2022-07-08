@@ -10,3 +10,4 @@
 - [6장 열거타입과 애너테이션](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch06.md)
 - [7장 람다와 스트림](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch07.md)
 - [8장 메서드](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch08.md)
+- [9장 일반적인 프로그래밍 원칙](https://github.com/dyparkkk/TIL/blob/main/book/이펙티브_자바/Ch09.md)
